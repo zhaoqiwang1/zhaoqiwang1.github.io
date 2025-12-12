@@ -1,0 +1,411 @@
+---
+title: "R Programming Basics (Part 1)"
+author: "Zhaoqi Wang"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: 
+    
+    latex_engine: xelatex
+    number_sections: true
+    toc: true
+    toc_depth: 3  
+  html_document: 
+    toc_float: 
+      collapsed: false
+    theme: cosmo
+    number_sections: true
+    toc: true
+    toc_depth: 3
+  header-includes:
+  - \usepackage{titling}
+  - \newcommand{\forcepagetitle}{\thispagestyle{empty}\clearpage}  # 强制新页
+  - \newcommand{\forcepagetoc}{\clearpage}  # 目录后新页
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, collapse = TRUE)
+```
+
+\forcepagetitle
+
+# Download R and RStudio
+* Download R and RStudio
+  + https://www.r-project.org
+  + https://posit.co/downloads/
+
+
+# Basics
+
+## R Language Syntax
+
+```{r}
+"Hello World!"
+print("hello world!")
+5 + 5
+2*1
+5/4
+2^16 #exponent
+
+# Built-in Math Functions
+max(5, 10, 15)
+min(5, 10, 15)
+sqrt(16)
+abs(-4.7)
+ceiling(1.4)
+floor(1.4)
+# mean(x, na.rm= FALSE )
+# sd(x)
+# median(x)
+```
+
+```{r}
+# Assignment
+# Use the "<-" operator
+# on the left is the name
+# on the right is the data you want assigned to the name
+x <- 1
+y <- "Hey there"
+name <- "John"
+age <- 40
+name   
+age
+print(name)
+```
+
+**Scripts**, You can work in scripts for interactive programming as we have in this lecture. To open a new script, click "File" >> "New File" >> "R Script" you can also run these .R script files.
+
+**Run Code in a Script Window**
+You can also just run a single line of your script by moving your cursor to the line you want to run and clicking ctrl+enter together. You can run multiple lines by selecting all the lines you want to run, and clicking ctrl+enter together.
+
+## Concatenate Elements
+
+```{r}
+text <- "awesome"
+paste("R is", text)
+
+text1 <- "R is"
+text2 <- "awesome"
+paste(text1, text2)
+
+num1 <- 5
+num2 <- 10
+num1 + num2
+```
+
+## Variable Names
+
+```{r}
+# Legal variable names:
+myvar <- "John"
+my_var <- "John"
+myVar <- "John"
+MYVAR <- "John"
+myvar2 <- "John"
+
+# Illegal variable names:
+# 2myvar <- "John"
+# my-var <- "John"
+# my var <- "John"
+# _my_var <- "John"
+# my_v@ar <- "John"
+# TRUE <- "John"
+```
+
+
+**There are rules about naming objects.**
+
+```{r}
+# Your object name must start with a letter (upper or lower)
+y1 <- 1
+y_1 <- 1
+y.1 <- 1
+# if you update an object, perhaps append numbers with a "." or "_"
+# it cannot start with a number：
+# 1y <- 1 (This is Wrong)
+# there are a bunch of protected special characters.
+# object named cannot include these characters ^ !@#$%^&*()
+
+```
+
+**assign numeric value**
+
+```{r}
+# In this context, you technically could use the "=" symbol for assignment.
+x = 1
+x <- 1
+# but in other contexts you cannot,
+# and in some context you'll only want to use the "=" equal sign.
+# so, for assignment, just stick wtih the "<-" operator.
+```
+
+## Comments
+
+```{r}
+# Note also that the "#" pound symbol allow for comments in your script.
+# R will ignore any lines in the console or your scripts after a #, to the end of the line.
+x <- 1 #so you can comment after code too
+```
+
+## *In Class Applications*
+
+In an R script (.r) files, practice the following two tasks:
+
+**Task 1**
+
+Use the "paste(text1, text2)" syntax we just learned to print the following sentence: "I find R interesting and I am willing to learn more about it." Note that you need to use four "texts" for the above four different colored parts.
+
+**Task 2**
+
+Calculate the following simple math and interpret the results:
+3^4; 21 ÷ 4; 23 %/% 6; 4 %% 3.
+
+
+# Data Types
+
+```{r}
+my_var <- 30 # my_var is type of numeric
+my_var <- "Sally" # my_var is now of type character (aka string，字符)
+
+# numeric - (10.5, 55, 787)
+# integer - (1L, 55L, 100L, where the letter "L" declares this as an integer)
+# complex - (9 + 3i, where "i" is the imaginary part)复数
+# character (a.k.a. string) - ("k", "R is exciting", "FALSE", "11.5")
+# logical (a.k.a. boolean) - (TRUE or FALSE)
+
+x <- 10.5   # numeric
+y <- 10L    # integer
+z <- 1i     # complex
+```
+
+
+```{r}
+x <- 10.5
+y <- 55
+# Print the class name of x and y
+class(x)
+class(y)
+```
+
+```{r}
+# Type Conversion
+as.numeric()
+as.integer()
+as.complex()
+# how about is.numeric()?
+```
+
+# If Else Statement
+## Booleans / Logical Values
+
+```{r}
+10 > 9    # TRUE because 10 is greater than 9
+10 == 9   # FALSE because 10 is not equal to 9
+10 < 9    # FALSE because 10 is greater than 9
+
+a <- 10
+b <- 9
+a > b
+
+# Operator
+# ==
+# !=
+# >
+# <
+# >=
+# <=
+```
+
+## If... Else
+
+```{r}
+a <- 33
+b <- 200
+
+if (b > a) {
+  print("b is greater than a")
+}
+
+if (b > a) {
+  print ("b is greater than a")
+} else {
+  print("b is not greater than a")
+}
+
+```
+
+```{r}
+a <- 33
+b <- 33
+
+if (b > a) {
+  print("b is greater than a")
+} else if (a == b) {
+  print ("a and b are equal")
+}
+
+```
+
+```{r}
+a <- 200
+b <- 33
+
+if (b > a) {
+  print("b is greater than a")
+} else if (a == b) {
+  print("a and b are equal")
+} else {
+  print("a is greater than b")
+}
+
+```
+
+```{r}
+a <- 200
+b <- 33
+c <- 500
+
+if (a > b & c > a) {
+  print("Both conditions are true")
+}
+```
+
+
+```{r}
+a <- 200
+b <- 33
+c <- 500
+
+if (a > b | a > c) {
+  print("At least one of the conditions is true")
+}
+```
+
+```{r}
+x <- 41
+
+if (x > 10) {
+  print("Above ten")
+  if (x > 20) {
+    print("and also above 20!")
+  } else {
+    print("but not above 20.")
+  }
+} else {
+  print("below 10.")
+}
+```
+
+## *In Class Applications*
+
+**Task 1**
+
+Variable `a` equals to the square root of 16654; and `b` equals to 122.
+
+Use `if else` statement to write the following: if b > a, b is greater than a; otherwise, if a equals b, a and b are equal; otherwise else, a is  greater than b.
+
+**Task 2**
+
+Variable `a` equals to the square root of 43435; and `b` equals to 210.
+
+Use `if else` statement to write the following: if b > a or b == a, tell me that b is greater than or equal to a; otherwise,  tell me a is greater than b.
+
+
+# For Loop and R Functions
+## Basic For Loop
+
+```{r}
+for (x in 1:10) {
+  print(x)
+}
+
+
+fruits <- list("apple", "banana", "cherry")
+
+for (x in fruits) {
+  print(x)
+}
+
+
+dice <- c(1, 2, 3, 4, 5, 6)
+for (x in dice) {
+  print(x)
+}
+```
+
+```{r}
+dice <- 1:6
+
+for(x in dice) {
+  if (x == 6) {
+    print(paste("The dice number is", x, "Win!"))
+  } else {
+    print(paste("The dice number is", x, "Lose!"))
+  }
+}
+```
+
+## Nested Loops
+
+```{r}
+adj <- list("red", "big", "tasty")
+fruits <- list("apple", "banana", "cherry")
+  for (x in adj) {
+    for (y in fruits) {
+      print(paste(x, y))
+  }
+}
+
+```
+
+## Functions
+
+```{r}
+my_function <- function() { # create a function with the name my_function
+  print("Hello World!")
+}
+
+
+my_function() # call the function named my_function
+```
+
+```{r}
+my_function <- function(fname) {
+  paste(fname, "Griffin")
+}
+
+my_function("Peter")
+my_function("Lois")
+my_function("Stewie")
+```
+
+```{r}
+my_function <- function(x) {
+  return (5 * x)
+}
+
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
+```
+
+```{r}
+Nested_function <- function(x, y) {
+  a <- x + y
+  return(a)
+}
+
+Nested_function(Nested_function(2,2), Nested_function(3,3))
+```
+
+## *In Class Applications*
+
+The "value" takes value from 60 to 65. For each value in "value", print the following:
+
++ "The value is 60 not 65."
++ "The value is 61 not 65."
++ "The value is 62 not 65."
++ "The value is 63 not 65."
++ "The value is 64 not 65."
++ "The value is 65, finally!"
+
+
