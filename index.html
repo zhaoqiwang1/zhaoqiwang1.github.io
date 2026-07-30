@@ -1,62 +1,1266 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Zhaoqi Wang</title>
-    <link rel = "stylesheet" type = "text/css" href = "style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  </head>
-  
-  <!-- the content of the website goes between the <body> and </body> tags. -->
-  <body>
-    <div class = "wrapper">
-        <div class = "left">
-            <img class = "profile-picture" src="img/profile.JPG" width="370" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Zhaoqi Wang - Assistant Professor at Jinan University"
+    data-i18n-content="meta.description"
+  >
+
+  <title>Zhaoqi Wang 王兆祺</title>
+
+  <!-- Modern fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==================== Navigation ==================== -->
+
+  <header class="site-header">
+    <nav
+      class="navbar container"
+      aria-label="Main navigation"
+      data-i18n-aria-label="nav.ariaLabel"
+    >
+
+      <a
+        href="#about"
+        class="brand"
+        data-page="about"
+        aria-label="Zhaoqi Wang homepage"
+        data-i18n-aria-label="brand.ariaLabel"
+      >
+        <span class="brand-mark">ZW</span>
+
+        <span class="brand-name">
+          Zhaoqi Wang
+        </span>
+      </a>
+
+      <div class="nav-menu">
+        <a
+          href="#about"
+          class="nav-link active"
+          data-page="about"
+          aria-current="page"
+        >
+          <span data-i18n="nav.about">About</span>
+        </a>
+
+        <a
+          href="#research"
+          class="nav-link"
+          data-page="research"
+        >
+          <span data-i18n="nav.research">Research</span>
+        </a>
+
+        <a
+          href="#teaching"
+          class="nav-link"
+          data-page="teaching"
+        >
+          <span data-i18n="nav.teaching">Teaching</span>
+        </a>
+
+        <a
+          href="#cv"
+          class="nav-link"
+          data-page="cv"
+        >
+          <span data-i18n="nav.cv">CV</span>
+        </a>
+      </div>
+
+      <div class="nav-actions">
+        <div
+          class="language-switcher"
+          role="group"
+          aria-label="Language selection"
+          data-i18n-aria-label="language.ariaLabel"
+        >
+          <button
+            class="language-option"
+            type="button"
+            data-language="zh"
+            aria-pressed="false"
+          >
+            中
+          </button>
+
+          <button
+            class="language-option active"
+            type="button"
+            data-language="en"
+            aria-pressed="true"
+          >
+            EN
+          </button>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <!-- ==================== Main Content ==================== -->
+
+  <main>
+
+    <!-- ==================== About Page ==================== -->
+
+    <section
+      id="about"
+      class="page-section active"
+      aria-labelledby="about-title"
+    >
+      <div class="about-layout container">
+
+        <!-- Photo -->
+
+        <div class="portrait-column">
+          <div class="portrait-wrapper">
+            <img
+              class="profile-picture"
+              src="img/profile.JPG"
+              alt="Portrait of Zhaoqi Wang"
+              data-i18n-alt="profile.alt"
+            >
+          </div>
         </div>
 
-        <div class = "right">
-                <p class = "bio">
-                    <h1 class = "name">Zhaoqi Wang 王兆祺</h1>
-                    <h4 class = "subtitle">Assistant Professor</h4>
-                    <p>
-                        Jinan University <br>
-                        Department of Finance, School of Economics <br>
-                        601 Huangpu Blvd W, Tianhe, Guangzhou
-                    </p>
-                    <p>
-                        Email: <a href = "mailto: wzqbewater@gmail.com">wzqbewater@gmail.com</a> <br>
-                        <a href="https://drive.google.com/file/d/1iyg3Zhg-Hbyv1pe52VvRMlsPymqRViWg/view?usp=drive_link">CV in Chinese</a> <br>
-                        <a href="https://drive.google.com/file/d/1hpx3kn58t0HquxQZnduL_k7nVH2OQbkd/view?usp=sharing">CV in English</a>
-                    </p>
-        </div>
-    </div>
-    <div class = "aboutme">
-        <h2>About Me </h2>
-        <p>I am an Assistant Professor in the Department of Finance at Jinan University (Guangzhou, China). </p>
-        <p>My research focuses on the processes and underlying mechanisms of human cognition, thought, and the formation of beliefs, with a particular emphasis on the interplay between cognitive processes and behavioral decision-making. Grounded in linguistic and informational contexts, my work examines how individuals construct, evaluate, and revise their judgments and biases. Situated at the intersection of behavioral economics, cognitive psychology, social psychology, and communication studies, my research aims to explore how cognitive architectures and informational environments jointly shape human judgment and decision-making.</p>
-        <h2>Publications </h2>  
-        <p>
-          <p> "<a href="https://doi.org/10.1016/j.jbef.2026.101213">Motivated Inference of Ambiguous Information.</a>" Zhaoqi Wang and Vivian Juehui Zheng, <em>Journal of Behavioral and Experimental Finance</em> (2026): 101213.</p>
-         </p>
-         <p> "<a href="https://doi.org/10.1016/j.socec.2026.102578">Motivated Beliefs Meet in the Marketplace.</a>" Daniel Friedman and Zhaoqi Wang, <em>Journal of Behavioral and Experimental Economics</em> (2026): 102578.</p>
-         </p>
-         <p> "<a href="https://doi.org/10.1080/15427560.2025.2469215">Overconfidence and Market Performance.</a>" Zhaoqi Wang, Daniel Friedman, and Thomas Bowen, <em>Journal of Behavioral Finance</em> (2025): 1-16.</p>
-         </p>
-        <h2>Working Papers </h2>
-        <p>
-           <p> Zhaoqi Wang and Anqi Zheng. "Mitigating Myside Bias: The Role of Logical Fallacy Recognition Training." Under Review at <em>Journal of Behavioral Decision Making.</em> </p>
-           <p> Xi Cheng and Zhaoqi Wang. "Navigating Between Idealization and Involution: Adaptation Strategies of Ethnic Chinese Students from Overseas in Chinese Higher Education." Under Review at <em>Higher Education.</em></p> 
-        </p>
-        <h2>Work in Progress</h2>
-        <p>
-            <p> Zhaoqi Wang, Xi Cheng, and Jingran Liu. "Motivated Reasoning and Logical Fallacies: How Moral Foundations Shape the Evaluation of Faulty Arguments" </p>
-            <p> Zhaoqi Wang, Xi Cheng, and Jingran Liu. "Making the Flawed Sound Persuasive: The Role of Rhetoric in Argument Evaluation"</p>
-            <p>
-              Xi Cheng and Zhaoqi Wang. "Sojourning in the Ancestral Land: Ethnic Identity and Adaptation Among Overseas Chinese Students in the People's Republic of China"
+
+        <!-- Personal information and About Me -->
+
+        <div class="about-content">
+
+          <div class="intro">
+
+            <!-- <p class="eyebrow">
+              Behavioral Economics · Decision Science
+            </p> -->
+
+            <h1 id="about-title" class="name">
+              Zhaoqi Wang 王兆祺
+              <span class="chinese-name" data-i18n="profile.role">Assistant Professor</span>
+            </h1>
+
+            <!-- <p class="position">
+              Assistant Professor
+            </p> -->
+
+          </div>
+
+
+          <!-- Basic information -->
+
+          <div class="basic-information">
+
+            <div class="info-item">
+              <span class="info-label" data-i18n="about.affiliationLabel">
+                Affiliation
+              </span>
+
+              <p data-i18n-html="about.affiliationValue">
+                Department of Finance<br>
+                School of Economics<br>
+                Jinan University
+              </p>
+            </div>
+
+            <div class="info-item">
+              <span class="info-label" data-i18n="about.locationLabel">
+                Location
+              </span>
+
+              <p data-i18n-html="about.locationValue">
+                601 Huangpu Blvd W<br>
+                Tianhe, Guangzhou, China
+              </p>
+            </div>
+
+            <div class="info-item info-item-wide">
+              <span class="info-label" data-i18n="about.emailLabel">
+                Email
+              </span>
+
+              <p>
+                <a href="mailto:wzqbewater@gmail.com">
+                  wzqbewater@gmail.com
+                </a>
+              </p>
+            </div>
+
+          </div>
+
+
+          <!-- About Me -->
+
+          <div class="about-me">
+
+            <div class="section-label" data-i18n="about.heading">
+              About Me
+            </div>
+
+            <p data-i18n="about.paragraph1">
+              I am an Assistant Professor in the Department of Finance at Jinan University in Guangzhou, China.
             </p>
-        </p>
-    </div>
 
-  </body>
+            <p data-i18n="about.paragraph2">
+              My research focuses on the processes and underlying mechanisms of human cognition, thought, and the formation of beliefs, with a particular emphasis on the interplay between cognitive processes and behavioral decision-making.
+            </p>
+
+            <p data-i18n="about.paragraph3">
+              Grounded in linguistic and informational contexts, my work examines how individuals construct, evaluate, and revise their judgments and biases. Situated at the intersection of behavioral economics, cognitive psychology, social psychology, and communication studies, my research explores how cognitive architectures and informational environments jointly shape human judgment and decision-making.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== Research Page ==================== -->
+
+    <section
+      id="research"
+      class="page-section"
+      aria-labelledby="research-title"
+    >
+      <div class="content-page container">
+
+        <div class="page-heading">
+
+          <p class="eyebrow" data-i18n="research.eyebrow">
+            Research
+          </p>
+
+          <h1 id="research-title" data-i18n="research.title">
+            Publications and Projects
+          </h1>
+          <!-- <p class="page-description">
+            My research examines motivated reasoning, belief formation,
+            argument evaluation, and behavioral decision-making.
+          </p> -->
+        </div>
+
+
+        <!-- Publications -->
+
+        <div class="research-group">
+
+          <div class="group-heading">
+            <h2 data-i18n="research.publications">Publications</h2>
+          </div>
+
+
+          <article class="paper-card">
+
+            <div class="paper-year">
+              2026
+            </div>
+
+            <div class="paper-content">
+
+              <h3>
+                <a
+                  href="https://doi.org/10.1016/j.jbef.2026.101213"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span data-i18n="paper.p1Title">Motivated Inference of Ambiguous Information</span>
+                </a>
+              </h3>
+
+              <p class="authors" data-i18n="paper.p1Authors">
+                Zhaoqi Wang and Vivian Juehui Zheng
+              </p>
+
+              <p class="journal">
+                <em>
+                  Journal of Behavioral and Experimental Finance
+                </em>,
+                101213.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="paper-card">
+
+            <div class="paper-year">
+              2026
+            </div>
+
+            <div class="paper-content">
+
+              <h3>
+                <a
+                  href="https://doi.org/10.1016/j.socec.2026.102578"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span data-i18n="paper.p2Title">Motivated Beliefs Meet in the Marketplace</span>
+                </a>
+              </h3>
+
+              <p class="authors" data-i18n="paper.p2Authors">
+                Daniel Friedman and Zhaoqi Wang
+              </p>
+
+              <p class="journal">
+                <em>
+                  Journal of Behavioral and Experimental Economics
+                </em>,
+                102578.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="paper-card">
+
+            <div class="paper-year">
+              2025
+            </div>
+
+            <div class="paper-content">
+
+              <h3>
+                <a
+                  href="https://doi.org/10.1080/15427560.2025.2469215"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span data-i18n="paper.p3Title">Overconfidence and Market Performance</span>
+                </a>
+              </h3>
+
+              <p class="authors" data-i18n="paper.p3Authors">
+                Zhaoqi Wang, Daniel Friedman, and Thomas Bowen
+              </p>
+
+              <p class="journal">
+                <em>Journal of Behavioral Finance</em>,
+                1–16.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- Working Papers -->
+
+        <div class="research-group">
+
+          <div class="group-heading">
+            <h2 data-i18n="research.workingPapers">Working Papers</h2>
+          </div>
+
+
+          <article class="paper-card">
+
+            <div class="paper-status" data-i18n="research.underReview">
+              Under Review
+            </div>
+
+            <div class="paper-content">
+
+              <h3 data-i18n="paper.w1Title">
+                Mitigating Myside Bias: The Role of Logical Fallacy Recognition Training
+              </h3>
+
+              <p class="authors" data-i18n="paper.w1Authors">
+                Zhaoqi Wang and Anqi Zheng
+              </p>
+
+              <p class="journal" data-i18n-html="paper.w1Journal">
+                Under review at <em>Journal of Behavioral Decision Making</em>.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="paper-card">
+
+            <div class="paper-status" data-i18n="research.underReview">
+              Under Review
+            </div>
+
+            <div class="paper-content">
+
+              <h3 data-i18n="paper.w2Title">
+                Navigating Between Idealization and Involution: Adaptation Strategies of Ethnic Chinese Students from Overseas in Chinese Higher Education
+              </h3>
+
+              <p class="authors" data-i18n="paper.w2Authors">
+                Xi Cheng and Zhaoqi Wang
+              </p>
+
+              <p class="journal" data-i18n-html="paper.w2Journal">
+                Under review at <em>Higher Education</em>.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- Work in Progress -->
+
+        <div class="research-group">
+
+          <div class="group-heading">
+            <h2 data-i18n="research.workInProgress">Work in Progress</h2>
+          </div>
+
+
+          <article class="paper-card">
+
+            <div class="paper-status muted-status" data-i18n="research.inProgress">
+              In Progress
+            </div>
+
+            <div class="paper-content">
+
+              <h3 data-i18n="paper.ip1Title">
+                Motivated Reasoning and Logical Fallacies: How Moral Foundations Shape the Evaluation of Faulty Arguments
+              </h3>
+
+              <p class="authors" data-i18n="paper.ip1Authors">
+                Zhaoqi Wang, Xi Cheng, and Jingran Liu
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="paper-card">
+
+            <div class="paper-status muted-status" data-i18n="research.inProgress">
+              In Progress
+            </div>
+
+            <div class="paper-content">
+
+              <h3 data-i18n="paper.ip2Title">
+                Making the Flawed Sound Persuasive: The Role of Rhetoric in Argument Evaluation
+              </h3>
+
+              <p class="authors" data-i18n="paper.ip2Authors">
+                Zhaoqi Wang, Xi Cheng, and Jingran Liu
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="paper-card">
+
+            <div class="paper-status muted-status" data-i18n="research.inProgress">
+              In Progress
+            </div>
+
+            <div class="paper-content">
+
+              <h3 data-i18n="paper.ip3Title">
+                Sojourning in the Ancestral Land: Ethnic Identity and Adaptation Among Overseas Chinese Students in the People's Republic of China
+              </h3>
+
+              <p class="authors" data-i18n="paper.ip3Authors">
+                Xi Cheng and Zhaoqi Wang
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== Teaching Page ==================== -->
+
+  <section
+    id="teaching"
+    class="page-section"
+    aria-labelledby="teaching-title"
+  >
+    <div class="content-page container">
+
+      <!-- ==================== Page Heading ==================== -->
+
+      <div class="page-heading">
+
+        <p
+          class="eyebrow"
+          data-i18n="teaching.eyebrow"
+        >
+          Teaching
+        </p>
+
+        <h1
+          id="teaching-title"
+          data-i18n="teaching.title"
+        >
+          Teaching and Courses
+        </h1>
+
+        <!-- <p
+          class="page-description"
+          data-i18n="teaching.description"
+        >
+          I currently teach four courses and provide course materials
+          and learning resources through my teaching website and
+          WeChat Mini Program.
+        </p> -->
+
+      </div>
+
+
+      <!-- ==================== Courses ==================== -->
+
+      <div class="teaching-section">
+
+        <div class="group-heading">
+
+          <h2 data-i18n="teaching.coursesTitle">
+            Courses I Teach
+          </h2>
+
+          <!-- <span class="group-count">
+            4
+          </span> -->
+
+        </div>
+
+
+        <div class="courses-grid">
+
+          <!-- Course 1 -->
+
+          <article class="course-card">
+
+            <!-- <span class="course-number">
+              01
+            </span> -->
+
+            <h3 data-i18n="teaching.courseExperimental">
+              Experimental Economics and Applications
+            </h3>
+
+          </article>
+
+
+          <!-- Course 2 -->
+
+          <article class="course-card">
+
+            <!-- <span class="course-number">
+              02
+            </span> -->
+
+            <h3 data-i18n="teaching.courseBehavioralFinance">
+              Behavioral Finance
+            </h3>
+
+          </article>
+
+
+          <!-- Course 3 -->
+
+          <article class="course-card">
+
+            <!-- <span class="course-number">
+              03
+            </span> -->
+
+            <h3 data-i18n="teaching.courseR">
+              R Programming
+            </h3>
+
+          </article>
+
+
+          <!-- Course 4 -->
+
+          <article class="course-card">
+
+            <!-- <span class="course-number">
+              04
+            </span> -->
+
+            <h3 data-i18n="teaching.courseLogic">
+              Logic
+            </h3>
+
+          </article>
+
+        </div>
+
+      </div>
+
+
+      <!-- ==================== Teaching Platforms ==================== -->
+
+      <div class="teaching-section">
+
+        <div class="group-heading">
+
+          <h2 data-i18n="teaching.platformsTitle">
+            Teaching Platforms
+          </h2>
+
+        </div>
+
+
+        <div class="teaching-platforms-grid">
+
+          <!-- ==================== Teaching Website ==================== -->
+
+          <article class="teaching-platform-card teaching-website-card">
+
+            <div class="platform-label">
+
+              <span class="platform-label-dot"></span>
+
+              <span data-i18n="teaching.websiteLabel">
+                Teaching Website
+              </span>
+
+            </div>
+
+
+            <h3 data-i18n="teaching.websiteTitle">
+              Zhaoqi Wang Teaching
+            </h3>
+
+
+            <p
+              class="platform-description"
+              data-i18n="teaching.websiteDescription"
+            >
+              Course materials, teaching schedules, assignments, and
+              other learning resources are available on my dedicated
+              teaching website.
+            </p>
+
+
+            <a
+              class="teaching-website-button"
+              href="https://zhaoqiwangteaching.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+
+              <span data-i18n="teaching.websiteButton">
+                Visit Teaching Website
+              </span>
+
+              <span
+                class="teaching-button-arrow"
+                aria-hidden="true"
+              >
+                ↗
+              </span>
+
+            </a>
+
+
+            <p class="teaching-website-url">
+              zhaoqiwangteaching.com
+            </p>
+
+          </article>
+
+
+          <!-- ==================== WeChat Mini Program ==================== -->
+
+          <article class="teaching-platform-card mini-program-card">
+
+            <div class="mini-program-information">
+
+              <div class="platform-label">
+
+                <span class="platform-label-dot"></span>
+
+                <span data-i18n="teaching.miniProgramLabel">
+                  WeChat Mini Program
+                </span>
+
+              </div>
+
+
+              <h3 data-i18n="teaching.miniProgramTitle">
+                Mobile Learning Platform
+              </h3>
+
+
+              <p
+                class="platform-description"
+                data-i18n="teaching.miniProgramDescription"
+              >
+                I developed a WeChat Mini Program for my courses,
+                allowing students to access course-related learning
+                resources from their mobile devices.
+              </p>
+
+
+              <p
+                class="mini-program-scan-text"
+                data-i18n="teaching.miniProgramScan"
+              >
+                Open WeChat and scan the code to enter the Mini Program.
+              </p>
+
+            </div>
+
+
+            <div class="mini-program-qr">
+
+              <img
+                src="img/xiaochengxuQR.jpg"
+                alt="WeChat Mini Program QR code / 微信小程序码"
+              >
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+    <!-- ==================== CV Page ==================== -->
+
+    <section
+      id="cv"
+      class="page-section"
+      aria-labelledby="cv-title"
+    >
+      <div class="content-page container">
+
+        <div class="page-heading centered-heading">
+
+          <p class="eyebrow" data-i18n="cv.eyebrow">
+            Curriculum Vitae
+          </p>
+
+          <h1 id="cv-title" data-i18n="cv.title">
+            View My CV
+          </h1>
+
+          <!-- <p class="page-description">
+            Choose a language to view the latest version of my
+            curriculum vitae.
+          </p> -->
+
+        </div>
+
+
+        <div class="cv-grid">
+
+          <a
+            class="cv-card"
+            href="https://drive.google.com/file/d/1iyg3Zhg-Hbyv1pe52VvRMlsPymqRViWg/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <div class="cv-icon">
+              中
+            </div>
+
+            <div class="cv-card-content">
+              <span class="cv-language" data-i18n="cv.chineseLabel">
+                Chinese
+              </span>
+
+              <h2 data-i18n="cv.chineseTitle">Chinese CV</h2>
+
+              <p data-i18n="cv.chineseDescription">
+                View the Chinese curriculum vitae
+              </p>
+            </div>
+
+            <span class="cv-arrow" aria-hidden="true">
+              →
+            </span>
+
+          </a>
+
+
+          <a
+            class="cv-card"
+            href="https://drive.google.com/file/d/1hpx3kn58t0HquxQZnduL_k7nVH2OQbkd/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <div class="cv-icon">
+              EN
+            </div>
+
+            <div class="cv-card-content">
+              <span class="cv-language" data-i18n="cv.englishLabel">
+                English
+              </span>
+
+              <h2 data-i18n="cv.englishTitle">English CV</h2>
+
+              <p data-i18n="cv.englishDescription">
+                View the English curriculum vitae
+              </p>
+            </div>
+
+            <span class="cv-arrow" aria-hidden="true">
+              →
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==================== Footer ==================== -->
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <p>
+        © <span id="current-year"></span> Zhaoqi Wang
+      </p>
+
+      <a href="mailto:wzqbewater@gmail.com">
+        wzqbewater@gmail.com
+      </a>
+
+    </div>
+  </footer>
+
+
+  <!--
+    The website remains a static website.
+    This small script switches between sections without requiring
+    an additional JavaScript file.
+  -->
+
+  <script>
+    const pageSections = document.querySelectorAll(".page-section");
+    const navigationLinks = document.querySelectorAll(".nav-link");
+    const pageTriggers = document.querySelectorAll("[data-page]");
+    const languageButtons = document.querySelectorAll("[data-language]");
+
+    const availablePages = [
+      "about",
+      "research",
+      "teaching",
+      "cv"
+    ];
+
+    const translations = {
+      "en": {
+            "meta.description": "Zhaoqi Wang - Assistant Professor at Jinan University",
+            "nav.ariaLabel": "Main navigation",
+            "brand.ariaLabel": "Zhaoqi Wang homepage",
+            "language.ariaLabel": "Language selection",
+            "nav.about": "About",
+            "nav.research": "Research",
+            "nav.teaching": "Teaching",
+            "nav.cv": "CV",
+            "profile.alt": "Portrait of Zhaoqi Wang",
+            "profile.role": "Assistant Professor",
+            "about.affiliationLabel": "Affiliation",
+            "about.affiliationValue": "Department of Finance<br>School of Economics<br>Jinan University",
+            "about.locationLabel": "Location",
+            "about.locationValue": "601 Huangpu Blvd W<br>Tianhe, Guangzhou, China",
+            "about.emailLabel": "Email",
+            "about.heading": "About Me",
+            "about.paragraph1": "I am an Assistant Professor in the Department of Finance at Jinan University in Guangzhou, China.",
+            "about.paragraph2": "My research focuses on the processes and underlying mechanisms of human cognition, thought, and the formation of beliefs, with a particular emphasis on the interplay between cognitive processes and behavioral decision-making.",
+            "about.paragraph3": "Grounded in linguistic and informational contexts, my work examines how individuals construct, evaluate, and revise their judgments and biases. Situated at the intersection of behavioral economics, cognitive psychology, social psychology, and communication studies, my research explores how cognitive architectures and informational environments jointly shape human judgment and decision-making.",
+            "research.eyebrow": "Research",
+            "research.title": "Publications and Projects",
+            "research.publications": "Publications",
+            "research.workingPapers": "Working Papers",
+            "research.workInProgress": "Work in Progress",
+            "research.underReview": "Under Review",
+            "research.inProgress": "In Progress",
+            "paper.p1Title": "Motivated Inference of Ambiguous Information",
+            "paper.p1Authors": "Zhaoqi Wang and Vivian Juehui Zheng",
+            "paper.p2Title": "Motivated Beliefs Meet in the Marketplace",
+            "paper.p2Authors": "Daniel Friedman and Zhaoqi Wang",
+            "paper.p3Title": "Overconfidence and Market Performance",
+            "paper.p3Authors": "Zhaoqi Wang, Daniel Friedman, and Thomas Bowen",
+            "paper.w1Title": "Mitigating Myside Bias: The Role of Logical Fallacy Recognition Training",
+            "paper.w1Authors": "Zhaoqi Wang and Anqi Zheng",
+            "paper.w1Journal": "Under review at <em>Journal of Behavioral Decision Making</em>.",
+            "paper.w2Title": "Navigating Between Idealization and Involution: Adaptation Strategies of Ethnic Chinese Students from Overseas in Chinese Higher Education",
+            "paper.w2Authors": "Xi Cheng and Zhaoqi Wang",
+            "paper.w2Journal": "Under review at <em>Higher Education</em>.",
+            "paper.ip1Title": "Motivated Reasoning and Logical Fallacies: How Moral Foundations Shape the Evaluation of Faulty Arguments",
+            "paper.ip1Authors": "Zhaoqi Wang, Xi Cheng, and Jingran Liu",
+            "paper.ip2Title": "Making the Flawed Sound Persuasive: The Role of Rhetoric in Argument Evaluation",
+            "paper.ip2Authors": "Zhaoqi Wang, Xi Cheng, and Jingran Liu",
+            "paper.ip3Title": "Sojourning in the Ancestral Land: Ethnic Identity and Adaptation Among Overseas Chinese Students in the People's Republic of China",
+            "paper.ip3Authors": "Xi Cheng and Zhaoqi Wang",
+            "teaching.eyebrow": "Teaching",
+
+            "teaching.title": "Teaching and Courses",
+
+            "teaching.description":
+              "I currently teach four courses and provide course materials and learning resources through my teaching website and WeChat Mini Program.",
+
+            "teaching.coursesTitle": "Courses I Teach",
+
+            "teaching.courseExperimental":
+              "Experimental Economics and Applications",
+
+            "teaching.courseBehavioralFinance":
+              "Behavioral Finance",
+
+            "teaching.courseR":
+              "R Programming",
+
+            "teaching.courseLogic":
+              "Logic",
+
+            "teaching.platformsTitle":
+              "Teaching Platforms",
+
+            "teaching.websiteLabel":
+              "Teaching Website",
+
+            "teaching.websiteTitle":
+              "Zhaoqi Wang Teaching",
+
+            "teaching.websiteDescription":
+              "Course materials, teaching schedules, assignments, and other learning resources are available on my dedicated teaching website.",
+
+            "teaching.websiteButton":
+              "Visit Teaching Website",
+
+            "teaching.miniProgramLabel":
+              "WeChat Mini Program",
+
+            "teaching.miniProgramTitle":
+              "Mobile Learning Platform",
+
+            "teaching.miniProgramDescription":
+              "I developed a WeChat Mini Program for my courses, allowing students to access course-related learning resources from their mobile devices.",
+
+            "teaching.miniProgramScan":
+            "Open WeChat and scan the code (or search '兆祺的学习笔记') to enter the Mini Program.",
+            "cv.eyebrow": "Curriculum Vitae",
+            "cv.title": "View My CV",
+            "cv.chineseLabel": "Chinese",
+            "cv.chineseTitle": "Chinese CV",
+            "cv.chineseDescription": "View the Chinese curriculum vitae",
+            "cv.englishLabel": "English",
+            "cv.englishTitle": "English CV",
+            "cv.englishDescription": "View the English curriculum vitae"
+      },
+      "zh": {
+            "meta.description": "王兆祺——暨南大学经济学院金融系助理教授",
+            "nav.ariaLabel": "主导航栏",
+            "brand.ariaLabel": "王兆祺个人主页",
+            "language.ariaLabel": "语言选择",
+            "nav.about": "关于",
+            "nav.research": "研究",
+            "nav.teaching": "教学",
+            "nav.cv": "简历",
+            "profile.alt": "王兆祺个人照片",
+            "profile.role": "助理教授",
+            "about.affiliationLabel": "工作单位",
+            "about.affiliationValue": "暨南大学<br>经济学院<br>金融学系",
+            "about.locationLabel": "地址",
+            "about.locationValue": "中国广东省广州市天河区<br>黄埔大道西601号",
+            "about.emailLabel": "电子邮箱",
+            "about.heading": "关于我",
+            "about.paragraph1": "我是暨南大学经济学院金融学系助理教授，现工作于中国广州。",
+            "about.paragraph2": "我的研究关注人类认知、思维与信念形成的过程及其内在机制，尤其重视认知过程与行为决策之间的相互作用。",
+            "about.paragraph3": "我的研究立足于语言与信息情境，考察个体如何建构、评价和修正其判断与偏差。研究横跨行为经济学、认知心理学、社会心理学与传播学，旨在探讨认知结构与信息环境如何共同塑造人类的判断与决策。",
+            "research.eyebrow": "研究",
+            "research.title": "论文与研究项目",
+            "research.publications": "已发表论文",
+            "research.workingPapers": "工作论文",
+            "research.workInProgress": "进行中的研究",
+            "research.underReview": "审稿中",
+            "research.inProgress": "进行中",
+            "paper.p1Title": "Motivated Inference of Ambiguous Information",
+            "paper.p1Authors": "Zhaoqi Wang、Vivian Juehui Zheng",
+            "paper.p2Title": "Motivated Beliefs Meet in the Marketplace",
+            "paper.p2Authors": "Daniel Friedman、Zhaoqi Wang",
+            "paper.p3Title": "Overconfidence and Market Performance",
+            "paper.p3Authors": "Zhaoqi Wang、Daniel Friedman、Thomas Bowen",
+            "paper.w1Title": "Mitigating Myside Bias: The Role of Logical Fallacy Recognition Training",
+            "paper.w1Authors": "Zhaoqi Wang、Anqi Zheng",
+            "paper.w1Journal": "投稿至 <em>Journal of Behavioral Decision Making</em>，审稿中。",
+            "paper.w2Title": "Navigating Between Idealization and Involution: Adaptation Strategies of Ethnic Chinese Students from Overseas in Chinese Higher Education",
+            "paper.w2Authors": "Xi Cheng、Zhaoqi Wang",
+            "paper.w2Journal": "投稿至 <em>Higher Education</em>，审稿中。",
+            "paper.ip1Title": "Motivated Reasoning and Logical Fallacies: How Moral Foundations Shape the Evaluation of Faulty Arguments",
+            "paper.ip1Authors": "Zhaoqi Wang、Xi Cheng、Jingran Liu",
+            "paper.ip2Title": "Making the Flawed Sound Persuasive: The Role of Rhetoric in Argument Evaluation",
+            "paper.ip2Authors": "Zhaoqi Wang、Xi Cheng、Jingran Liu",
+            "paper.ip3Title": "Sojourning in the Ancestral Land: Ethnic Identity and Adaptation Among Overseas Chinese Students in the People's Republic of China",
+            "paper.ip3Authors": "Xi Cheng、Zhaoqi Wang",
+            "teaching.eyebrow": "教学",
+
+            "teaching.title": "教学与课程",
+
+            "teaching.description":
+              "我目前讲授四门课程，并通过独立教学网站和微信小程序提供课程资料与学习支持。",
+
+            "teaching.coursesTitle":
+              "当前讲授课程",
+
+            "teaching.courseExperimental":
+              "实验经济学及应用",
+
+            "teaching.courseBehavioralFinance":
+              "行为金融学",
+
+            "teaching.courseR":
+              "R语言",
+
+            "teaching.courseLogic":
+              "逻辑学",
+
+            "teaching.platformsTitle":
+              "教学平台",
+
+            "teaching.websiteLabel":
+              "独立教学网站",
+
+            "teaching.websiteTitle":
+              "Zhaoqi Wang Teaching",
+
+            "teaching.websiteDescription":
+              "课程资料、教学安排、作业以及其他学习资源集中发布于我的独立教学网站。",
+
+            "teaching.websiteButton":
+              "访问教学网站",
+
+            "teaching.miniProgramLabel":
+              "微信小程序",
+
+            "teaching.miniProgramTitle":
+              "微信小程序",
+
+            "teaching.miniProgramDescription":
+              "我为所授课程开发了微信小程序，学生可以通过手机进入课程学习空间并获取相关学习资源。",
+
+            "teaching.miniProgramScan":
+              "微信扫一扫，或在小程序中搜索 '兆祺的学习笔记'。",
+            "cv.eyebrow": "个人简历",
+            "cv.title": "查看我的简历",
+            "cv.chineseLabel": "中文",
+            "cv.chineseTitle": "中文简历",
+            "cv.chineseDescription": "查看中文版个人简历",
+            "cv.englishLabel": "英文",
+            "cv.englishTitle": "英文简历",
+            "cv.englishDescription": "查看英文版个人简历"
+      }
+};
+
+    function getSavedLanguage() {
+      try {
+        return localStorage.getItem("preferredLanguage");
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function saveLanguage(language) {
+      try {
+        localStorage.setItem("preferredLanguage", language);
+      } catch (error) {
+        // The website still works when browser storage is unavailable.
+      }
+    }
+
+    function translateAttribute(selector, attributeName, language) {
+      document.querySelectorAll(selector).forEach((element) => {
+        const translationKey = element.dataset.i18nAriaLabel
+          || element.dataset.i18nAlt
+          || element.dataset.i18nContent;
+
+        if (translationKey && translations[language][translationKey]) {
+          element.setAttribute(
+            attributeName,
+            translations[language][translationKey]
+          );
+        }
+      });
+    }
+
+    function setLanguage(language) {
+      const selectedLanguage = translations[language] ? language : "en";
+      const languageText = translations[selectedLanguage];
+
+      document.documentElement.lang = selectedLanguage === "zh"
+        ? "zh-CN"
+        : "en";
+
+      document.title = selectedLanguage === "zh"
+        ? "王兆祺 | 个人主页"
+        : "Zhaoqi Wang | Personal Website";
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const translationKey = element.dataset.i18n;
+
+        if (languageText[translationKey]) {
+          element.textContent = languageText[translationKey];
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-html]").forEach((element) => {
+        const translationKey = element.dataset.i18nHtml;
+
+        if (languageText[translationKey]) {
+          element.innerHTML = languageText[translationKey];
+        }
+      });
+
+      translateAttribute(
+        "[data-i18n-aria-label]",
+        "aria-label",
+        selectedLanguage
+      );
+      translateAttribute(
+        "[data-i18n-alt]",
+        "alt",
+        selectedLanguage
+      );
+      translateAttribute(
+        "[data-i18n-content]",
+        "content",
+        selectedLanguage
+      );
+
+      languageButtons.forEach((button) => {
+        const isActive = button.dataset.language === selectedLanguage;
+
+        button.classList.toggle("active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+
+      saveLanguage(selectedLanguage);
+    }
+
+    function showPage(pageName, updateHistory = true) {
+      const selectedPage = availablePages.includes(pageName)
+        ? pageName
+        : "about";
+
+      pageSections.forEach((section) => {
+        const isActive = section.id === selectedPage;
+
+        section.classList.toggle("active", isActive);
+        section.setAttribute("aria-hidden", String(!isActive));
+      });
+
+      navigationLinks.forEach((link) => {
+        const isActive = link.dataset.page === selectedPage;
+
+        link.classList.toggle("active", isActive);
+
+        if (isActive) {
+          link.setAttribute("aria-current", "page");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+
+      if (updateHistory) {
+        history.pushState(
+          { page: selectedPage },
+          "",
+          `#${selectedPage}`
+        );
+      }
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+
+    pageTriggers.forEach((trigger) => {
+      trigger.addEventListener("click", (event) => {
+        event.preventDefault();
+        showPage(trigger.dataset.page);
+      });
+    });
+
+    languageButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        setLanguage(button.dataset.language);
+      });
+    });
+
+    window.addEventListener("popstate", () => {
+      const pageFromUrl = window.location.hash.substring(1);
+      showPage(pageFromUrl, false);
+    });
+
+    const initialPage = window.location.hash.substring(1) || "about";
+    const browserLanguage = navigator.language
+      .toLowerCase()
+      .startsWith("zh")
+      ? "zh"
+      : "en";
+    const initialLanguage = getSavedLanguage() || browserLanguage;
+
+    showPage(initialPage, false);
+    setLanguage(initialLanguage);
+
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
 </html>
